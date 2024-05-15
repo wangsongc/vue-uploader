@@ -107,10 +107,10 @@ export default {
       return type
     })
     const progressStyle = computed(() => {
-      progress.value = Math.floor(progress.value * 100)
-      const style = `translateX(${Math.floor(progress.value - 100)}%)`
+      const progressValue = Math.floor(progress.value * 100)
+      const style = `translateX(${Math.floor(progressValue - 100)}%)`
       return {
-        progress: `${progress.value}%`,
+        progress: `${progressValue}%`,
         webkitTransform: style,
         mozTransform: style,
         msTransform: style,
