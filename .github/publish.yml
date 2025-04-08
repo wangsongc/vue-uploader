@@ -17,14 +17,14 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '20'
           registry-url: 'https://registry.npmjs.org'
 
       # Use github actions to install pnpm at least 6 version 
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 6
+          version: 8
 
       # Install dependencies 
       - name: Install dependencies
